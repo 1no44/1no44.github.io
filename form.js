@@ -27,8 +27,11 @@ xhr.onreadystatechange = function() {
             if(xhr.status == 201) {
                 var data = xhr.responseText;
                 console.log( 'COMPLETE! :'+data );
+                window.alert('投稿ありがとうございます！');
+                window.location = './index.html';
             } else {
                 console.log( 'Failed. HttpStatus: '+xhr.statusText );
+                window.alert('投稿に失敗しました。時間をおいてもう一度お試しください。');
             }
             break;
     }
