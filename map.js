@@ -138,6 +138,7 @@ function pushPin(report) {
     html += "<div style='width:300px;'>"
     html += "<h4>" + dateFormatted + "</h4>"
     html += "<p>" + report["comment"] + "</p>"
+    html += "<p><a href=\"datail.html?id=" + report["id"] + "\">詳細</a></p>"
     html += "<p><img src=\"data:image/jpeg;base64," + report["image_base64"] + "\" width=\"280\" height=\"auto\" /></p>"
     // html += "<p style='text-align:center'><img src='" + image + "' width='160' height='120'></p>";
     //
